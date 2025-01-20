@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+.quicksand-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*{
+    margin: 0;
+}
+
+
+
+/* shared style */
+.bg-primary {
+    background: #F7F7F7;
+}
+.wrapper {
+    max-width: 1158px;
+    margin: 0 auto;
+}
+.display-flex {
+    display: flex;
+}
+
+.section-title {
+    margin: 60px 0 80px
+}
+img {
+    width: 100%;
+}
+.btn {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.25rem;
+    border-radius: 12px;
+    border: none;
+}
+
+
+/* header section  */
+/* navbar related style */
+.nav-container {
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo {
+    align-items: center;
+}
+.logo-heading {
+    margin-left: 11px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.nav-links {
+    gap: 2rem;
+}
+.nav-links li {
+    list-style: none;
+
+}
+.nav-links li a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.nav-links .home {
+    color: orange;
+}
+.nav-links .about {
+    color: skyblue;
+}
+.nav-links .facilities {
+    color: #05D4DF;
+}
+.nav-links .admission {
+    color: #5D58EF;
+}
+.nav-btn {
+    background: orange;
+    padding: 10px 60px;
+}
+.bar {
+    display: none;
+}
+.bar .menu-bar {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
+
+
+/* responsive for small device */
+@media screen and (max-width: 576px) {
+    .nav-container {
+        padding: 12px 16px;
+    }
+    .logo-heading,
+    .nav-links,
+    .btn {
+        display: none;
+    }
+    .bar {
+        display: block;
+    }
+}
