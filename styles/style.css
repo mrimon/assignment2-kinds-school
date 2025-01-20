@@ -69,10 +69,10 @@ img {
     font-weight: 500;
 }
 .nav-links .home {
-    color: orange;
+    color: #FEA301;
 }
 .nav-links .about {
-    color: skyblue;
+    color: #01ACFD;
 }
 .nav-links .facilities {
     color: #05D4DF;
@@ -81,7 +81,7 @@ img {
     color: #5D58EF;
 }
 .nav-btn {
-    background: orange;
+    background: #FEA301;
     padding: 10px 60px;
 }
 .bar {
@@ -91,8 +91,40 @@ img {
     width: 30px;
     height: 30px;
 }
+.line {
+    border: 1px solid #FEA301;
+    display: none;
+}
+/* banner related style */
+.banner-container {
+    justify-content: space-between;
+}
+.banner-content-container {
+    align-items: center;
 
-
+}
+.banner-content {
+    max-width: 640px;
+}
+.banner-heading {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+.orng-txt {
+    color: #FEA301;
+}
+.blue-txt {
+    color: #01ACFD;
+}
+.banner-description {
+    margin: 24px 0;
+    font-size: 1.25rem;
+    color: #111111;
+}
+.banner-btn {
+    padding: 10px 47px;
+    background: #111111;
+}
 
 
 
@@ -105,10 +137,32 @@ img {
     }
     .logo-heading,
     .nav-links,
-    .btn {
+    .nav-btn {
         display: none;
     }
-    .bar {
+    .bar,
+    .line {
         display: block;
+    }
+
+
+    /* banner responsive */
+    .banner-container {
+        flex-direction: column-reverse;
+        padding: 8px 16px 0 16px;
+    }
+    .banner-profile {
+        padding: 20px 15px;
+    }
+    .banner-content-container {
+        text-align: center;
+        gap: 0;
+    }
+    .banner-heading {
+        font-size: 2rem;
+    }
+    .banner-description {
+        font-size: 0.9rem;
+        margin: 18px 0;
     }
 }
