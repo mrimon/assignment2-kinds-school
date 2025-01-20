@@ -216,6 +216,9 @@ img {
 
 /* responsive for small device */
 @media screen and (max-width: 576px) {
+    .bg-primary {
+        background-color: #fff;;
+    }
     .nav-container {
         padding: 12px 16px;
     }
@@ -251,6 +254,9 @@ img {
     }
 
     /* curriculum responsive */
+    .curriculum {
+        background: url(/assets/bg.png);
+    }
     .card-container {
         flex-direction: column;
         padding: 0 16px 20px 16px;
