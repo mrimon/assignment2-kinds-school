@@ -167,7 +167,7 @@ img {
 }
 
 .kinder {
-    background: linear-gradient(to bottom, rgba(222, 245, 255, 0.7) 15%, rgba(255, 255, 255, 1)85%);
+    background: linear-gradient(to bottom, rgba(222, 245, 255, 1) 15%, rgba(255, 255, 255, 1)85%);
 }
 .kinder-btn {
     text-decoration: none;
@@ -176,7 +176,7 @@ img {
     font-weight: 700;
 }
 .elementary {
-    background: linear-gradient(to bottom, rgba(255, 244, 220, 0.7) 10%, rgba(255, 255, 255, 1) 90%);
+    background: linear-gradient(to bottom, rgba(255, 244, 220, 1) 10%, rgba(255, 255, 255, 1) 90%);
 }
 .elementary img {
     max-width: 141.48px;
@@ -189,7 +189,7 @@ img {
     font-weight: 700;
 }
 .middle {
-    background: linear-gradient(to bottom, rgba(242, 232, 255, 0.7) 10%, rgba(255, 255, 255, 1) 90%);
+    background: linear-gradient(to bottom, rgba(242, 232, 255, 1) 10%, rgba(255, 255, 255, 1) 90%);
 }
 .middle-btn {
     text-decoration: none;
@@ -255,7 +255,7 @@ img {
 
     /* curriculum responsive */
     .curriculum {
-        background: url(/assets/bg.png);
+        background: url(../assets/bg.png);
     }
     .card-container {
         flex-direction: column;
