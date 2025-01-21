@@ -127,7 +127,7 @@ img {
 }
 /* curriculum styles */
 .curriculum {
-    background: url(/assets/bg.png), #F7F7F7;
+    background: url(../assets/bg.png), #F7F7F7;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -211,8 +211,103 @@ img {
     font-weight: 700;
     margin-right: 10px;
 }
+/* story related style */
+.story {
+    background: url(../assets/bg.png), linear-gradient(to bottom, rgba(247, 247, 247, 1), rgba(254, 163, 1, 0.3));
+}
+.story-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.story-card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+        "story1 story1 story2 story3"
+        "story1 story1 story4 story5";
+    gap: 19px;
 
 
+}
+.story1 {
+    grid-area: story1;
+}
+.story2 {
+    grid-area: story2;
+}
+.story3 {
+    grid-area: story3;
+}
+.story4 {
+    grid-area: story4;
+}
+.story5 {
+    grid-area: story5;
+}
+.story-card {
+    background: #fff;
+    border-radius: 16px;
+}
+.story-card img {
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+}
+/* colored button of story card */
+.colored-btn {
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 47.93px;
+    border:none;
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+    left: 38px;
+    top: -25px;
+}
+.btn-card1 {
+    background: #3CD8E8;
+}
+.btn-card2 {
+    background: #95B226;
+}
+.btn-card3 {
+    background: #5D58F0;
+}
+.btn-card4 {
+    background: #95B226;
+}
+.btn-card5 {
+    background: #95B226;
+}
+.story-content {
+    margin: 13.55px 38px 34px 38px; 
+}
+.story-content .title1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 47px;
+}
+.story-content .title {
+    font-size: 1rem;
+    font-weight: 700;
+
+}
+.story-content .description {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #666666;
+}
+.story-btn {
+    text-align: center;
+}
+.view-btn {
+    margin: 80px 0 60px 0;
+    padding: 10px 60px;
+    background: #000000;
+}
 
 /* responsive for small device */
 @media screen and (max-width: 576px) {
@@ -252,7 +347,9 @@ img {
         font-size: 0.9rem;
         margin: 18px 0;
     }
-
+    .banner-btn {
+        font-size: 1rem;
+    }
     /* curriculum responsive */
     .curriculum {
         background: url(../assets/bg.png);
@@ -261,12 +358,47 @@ img {
         flex-direction: column;
         padding: 0 16px 20px 16px;
     }
-    .curri-title {
+    .section-title {
         padding: 40px 0 20px 0;
-        font-size: 2.1rem;
+        font-size: 1.8rem;
     }
     .side-arrows {
         display: none;
     }
 
+    /* story responsive  */
+    .story {
+        padding: 0 16px;
+    }
+    .story-card-container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+            "story2 story3"
+            "story4 story5";
+        gap: 11px;
+
+    }
+    .story-content {
+        margin: -11.55px 22px 20px 22px;
+    }
+    .story1 {
+        display: none;
+        gap: 0;
+    }
+    .colored-btn {
+        font-size: 0.7rem;
+        left: 22px;
+        top: -18px;
+        padding: 6px 11px;
+    }
+    .story-content .title {
+        font-size: 0.7rem;
+    }
+    .view-btn {
+        margin: 20px 0 40px 0;
+        padding: 10px 37px;
+        font-size: 1rem;
+    }
+    
 }
